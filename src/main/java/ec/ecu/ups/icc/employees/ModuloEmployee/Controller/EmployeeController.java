@@ -15,7 +15,6 @@ public class EmployeeController {
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
     }
-
     @PatchMapping("/{employeeId}/transfer")
     public ResponseEntity<EmployeeTransferResponseDto> transferEmployee(
             @PathVariable Long employeeId,

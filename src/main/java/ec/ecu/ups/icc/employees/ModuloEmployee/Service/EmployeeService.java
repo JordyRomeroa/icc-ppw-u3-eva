@@ -36,7 +36,6 @@ public class EmployeeService {
         if (oldDept.getId().equals(newDept.getId())) {
             throw new ConflictException("Employee is already in the target department");
         }
-
         DepartmentInfo oldDeptDto = new DepartmentInfo();
         oldDeptDto.setId(oldDept.getId());
         oldDeptDto.setName(oldDept.getName());
